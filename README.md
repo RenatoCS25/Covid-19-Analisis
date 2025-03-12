@@ -97,3 +97,25 @@ FROM CovidDeaths
 WHERE continent IS NOT NULL 
 ORDER BY 1,2
 ```
+
+### Poblacion Total vs Vacunaciones
+
+```sql
+-- Muestra el porcentaje de la población que ha recibido al menos una vacuna contra la COVID-19.
+
+WITH popvsvac (Continent, Location, Date, Population, New_vaccinations, RollingPeopleVaccinated) AS  
+(
+SELECT dea.continent, dea.location, dea.date,dea.population, vac.new_vaccinations, 
+SUM(CONVERT(int,vac.new_vaccinations)) OVER (partition BY dea.location ORDER BY dea.location, dea.date) AS RollingPeopleVaccinated
+FROM CovidDeaths dea
+JOIN CovidVaccinations vac
+ON dea.location = vac.location
+and dea.date = vac.date
+WHERE dea.continent IS NOT NULL
+)
+SELECT*, (RollingPeopleVaccinated/Population)*100 AS PercentRollingPeopleVaccinated
+FROM popvsvac
+```
+
+
+
