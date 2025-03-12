@@ -32,7 +32,7 @@ WHERE continent is not null and  total_deaths is not null
 ORDER BY 1,2
 
 ### Total de casos vs. total de muertes en Perú
-
+```sql
 -- Muestra la probabilidad de morir si contraes COVID-19 en Perú
 
 SELECT location, date, total_cases, total_deaths, (total_deaths/total_cases)*100 AS DeathsPercentage
@@ -40,7 +40,7 @@ FROM CovidDeaths
 WHERE location LIKE '%Peru' 
 AND continent IS NOT NULL
 ORDER BY 1,2,
-
+```
 -- Total de casos vs. Total de muertes en Perú
 
 Muestra qué porcentaje de la población está infectada con Covid
