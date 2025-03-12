@@ -41,14 +41,15 @@ WHERE location LIKE '%Peru'
 AND continent IS NOT NULL
 ORDER BY 1,2,
 ```
--- Total de casos vs. Total de muertes en Perú
 
-Muestra qué porcentaje de la población está infectada con Covid
+### Total de casos vs. Total de muertes en Perú
+```sql
+-- Muestra qué porcentaje de la población está infectada con Covid
 
 SELECT location, date, population, total_cases, 
 	  (total_cases/population)*100 AS PercentPopulationInfected 
 FROM CovidDeaths
 ORDER BY 1,2
-
+```
 
 
