@@ -52,4 +52,14 @@ FROM CovidDeaths
 ORDER BY 1,2
 ```
 
+### Países con mayor tasa de infección en comparación con la población
 
+```sql
+-- Países con mayor tasa de infección en comparación con la población
+
+SELECT location, population, MAX(total_cases) AS HighestInfectionCount, MAX((total_cases/population))*100 AS PercentPopulationInfected
+FROM CovidDeaths
+WHERE continent is not null 
+GROUP BY location, population
+ORDER BY PercentPopulationInfected DESC
+```
