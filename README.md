@@ -24,11 +24,30 @@ Descripción del conjunto de datos: La tabla de muertes por COVID-19 "CovidDeath
 
 Covid-19 Vaccinations table 'CovidVaccinations' has 37 columns and 85,171 rows
 ## Analisis 
-Let's select the data that we are going to be using:
+Seleccionemos los datos que vamos a utilizar:
 
 SELECT location, date, total_cases, new_cases, total_deaths, population
 FROM CovidDeaths
 WHERE continent is not null and  total_deaths is not null
+ORDER BY 1,2
+
+### Total de casos vs. total de muertes en Perú
+
+-- Muestra la probabilidad de morir si contraes COVID-19 en Perú
+
+SELECT location, date, total_cases, total_deaths, (total_deaths/total_cases)*100 AS DeathsPercentage
+FROM CovidDeaths
+WHERE location LIKE '%Peru' 
+AND continent IS NOT NULL
+ORDER BY 1,2,
+
+-- Total de casos vs. Total de muertes en Perú
+
+Muestra qué porcentaje de la población está infectada con Covid
+
+SELECT location, date, population, total_cases, 
+	  (total_cases/population)*100 AS PercentPopulationInfected 
+FROM CovidDeaths
 ORDER BY 1,2
 
 
