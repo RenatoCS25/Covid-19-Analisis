@@ -63,3 +63,37 @@ WHERE continent is not null
 GROUP BY location, population
 ORDER BY PercentPopulationInfected DESC
 ```
+### Países con mayor número de muertes por población
+
+```sql
+-- Países con mayor número de muertes por población
+
+SELECT location, MAX(cast(total_deaths as int)) AS TotalDeathsCount
+FROM CovidDeaths
+WHERE continent is not null 
+GROUP BY location
+ORDER BY TotalDeathsCount DESC
+```
+### Países con mayor número de muertes por población
+
+```sql
+-- Países con mayor número de muertes por población
+
+SELECT location, MAX(cast(total_deaths as int)) AS TotalDeathsCount
+FROM CovidDeaths
+WHERE continent is not null 
+GROUP BY location
+ORDER BY TotalDeathsCount DESC
+```
+### Cifras globales de COVID-19: porcentaje de muertes
+
+```sql
+-- Porcentaje de muertes por total de casos
+
+SELECT SUM(CAST(new_cases AS INT)) AS Total_cases, 
+SUM(CAST(new_deaths AS INT)) AS Total_Deaths, 
+SUM(CAST(new_deaths AS INT))/ SUM(new_cases )*100 AS DeathsPercentage
+FROM CovidDeaths
+WHERE continent IS NOT NULL 
+ORDER BY 1,2
+```
