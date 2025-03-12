@@ -21,3 +21,15 @@ Este análisis busca responder las siguientes preguntas:
 - ¿Cuál es el total de casos frente al total de muertes en Nigeria?
 
 Descripción del conjunto de datos: La tabla de muertes por COVID-19 "CovidDeaths" tiene 26 columnas y 81 060 filas.
+
+Covid-19 Vaccinations table 'CovidVaccinations' has 37 columns and 85,171 rows
+## Analisis 
+Let's select the data that we are going to be using:
+
+SELECT location, date, total_cases, new_cases, total_deaths, population
+FROM CovidDeaths
+WHERE continent is not null and  total_deaths is not null
+ORDER BY 1,2
+
+
+
