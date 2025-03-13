@@ -18,11 +18,11 @@ Este análisis busca responder las siguientes preguntas:
 
 - ¿Cuál es el total de casos y el porcentaje de población infectada?
 
-- ¿Cuál es el total de casos frente al total de muertes en Nigeria?
+- ¿Cuál es el total de casos frente al total de muertes en Perú?
 
 Descripción del conjunto de datos: La tabla de muertes por COVID-19 "CovidDeaths" tiene 26 columnas y 81 060 filas.
 
-Covid-19 Vaccinations table 'CovidVaccinations' has 37 columns and 85,171 rows
+La tabla de vacunación contra la COVID-19 'CovidVaccinations' tiene 37 columnas y 85.171 filas
 ## Analisis con SQL Server
 Seleccionemos los datos que vamos a utilizar:
 
