@@ -23,7 +23,7 @@ Este análisis busca responder las siguientes preguntas:
 Descripción del conjunto de datos: La tabla de muertes por COVID-19 "CovidDeaths" tiene 26 columnas y 81 060 filas.
 
 Covid-19 Vaccinations table 'CovidVaccinations' has 37 columns and 85,171 rows
-## Analisis 
+## Analisis con SQL Server
 Seleccionemos los datos que vamos a utilizar:
 
 SELECT location, date, total_cases, new_cases, total_deaths, population
