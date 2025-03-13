@@ -118,8 +118,7 @@ FROM popvsvac
 ```
 ## Panel de análisis del impacto global de la COVID-19 en Tableau
 
-![image](https://github.com/user-attachments/assets/80b525ae-bdf1-4a86-8e6c-8db3d5bb6537)
-
+![image](https://github.com/user-attachments/assets/d4656fcc-1d3f-47f9-a357-14dc1dd691e4)
 
 ## Insights
 ### Casos Totales
