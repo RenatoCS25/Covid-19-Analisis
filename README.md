@@ -118,27 +118,27 @@ FROM popvsvac
 ```
 ## Insights
 ### Casos Totales
-Se han registrado 151 millones de casos a nivel global.
+- Se han registrado 151 millones de casos a nivel global.
 La tasa de mortalidad es del 2.11%, lo que indica que aproximadamente 2 de cada 100 personas infectadas fallecen.
 
 ### Países con Mayor Tasa de Infección
-Andorra, Montenegro y Chequia lideran la lista con las tasas de infección más altas.
+* Andorra, Montenegro y Chequia lideran la lista con las tasas de infección más altas.
 Esto sugiere que países con poblaciones pequeñas pueden tener tasas elevadas debido al menor denominador en la población total.
 
 ### Fallecimientos por Continente
-Europa y América del Norte presentan las mayores cifras de fallecidos (~0.16M y 0.15M millones respectivamente).
+- Europa y América del Norte presentan las mayores cifras de fallecidos (~0.16M y 0.15M millones respectivamente).
 Oceanía casi no registra muertes, lo que podría deberse a restricciones estrictas y menor densidad poblacional.
-Total de Fallecidos por País
+### Total de Fallecidos por País
 
-EE.UU. (576K), Brasil (404K) y México (217K) son los países con más muertes totales.
+- EE.UU. (576K), Brasil (404K) y México (217K) son los países con más muertes totales.
 Esto puede relacionarse con la alta densidad poblacional, sistemas de salud saturados o respuesta tardía a la pandemia.
 
 ### Distribución de Infectados
-El mapa de infectados muestra una concentración elevada en Asia, Europa y América del Norte, con África menos afectada en términos absolutos.
+- El mapa de infectados muestra una concentración elevada en Asia, Europa y América del Norte, con África menos afectada en términos absolutos.
 África muestra puntos más dispersos, lo que podría indicar un subregistro de casos debido a menor acceso a pruebas diagnósticas.
 
 ### Tendencia Temporal de Muertes
-Un pico significativo de fallecimientos se observa a finales de 2020 y principios de 2021, coincidiendo con nuevas variantes y olas de contagios.
+- Un pico significativo de fallecimientos se observa a finales de 2020 y principios de 2021, coincidiendo con nuevas variantes y olas de contagios.
 La curva sugiere una posible estabilización en la fase final del período analizado (abril 2021), posiblemente debido a vacunaciones.
 
 ## Recomendaciones
