@@ -116,6 +116,11 @@ WHERE dea.continent IS NOT NULL
 SELECT*, (RollingPeopleVaccinated/Population)*100 AS PercentRollingPeopleVaccinated
 FROM popvsvac
 ```
+## Panel de análisis del impacto global de la COVID-19 en Tableau
+
+![image](https://github.com/user-attachments/assets/80b525ae-bdf1-4a86-8e6c-8db3d5bb6537)
+
+
 ## Insights
 ### Casos Totales
 - Se han registrado 151 millones de casos a nivel global.
