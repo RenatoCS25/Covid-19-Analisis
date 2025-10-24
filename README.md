@@ -116,9 +116,10 @@ WHERE dea.continent IS NOT NULL
 SELECT*, (RollingPeopleVaccinated/Population)*100 AS PercentRollingPeopleVaccinated
 FROM popvsvac
 ```
-## Panel de análisis del impacto global de la COVID-19 en Tableau
+## Panel de análisis del impacto global de la COVID-19 en Power BI
 
-![image](https://github.com/user-attachments/assets/eefdde14-6f8d-4691-a1d0-51207c491c9e)
+<img width="722" height="405" alt="image" src="https://github.com/user-attachments/assets/f4fe991b-f0e4-46ac-919a-701c7e54ee37" />
+
 
 ## Insights
 ### Casos Totales
